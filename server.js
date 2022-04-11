@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-mongoose.connect(process.env.CONNECTIONSTRING)
+mongoose.connect(process.env.CONNECTIONSTRING,)
     .then(() => {
         app.emit('Mongoose conectou!')
     })
@@ -20,7 +20,7 @@ const helmet = require('helmet');
 const csrf = require('csurf');
 const { middlewareGlobal, checkError, csrfMiddleware } = require('./src/middleware/middleware');
 
-app.use(express.urlencoded({ extended: true })); //postar form pra dentro da aplicacao
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'public')))
 app.use(helmet());
