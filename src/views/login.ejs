@@ -12,7 +12,7 @@
               <div class="col-lg">
                 <h4 class="text-center">Faça seu cadastro</h4>
                 <p class="text-success my-3">Ainda não tem conta? Crie agora mesmo com apenas alguns cliques!</p>
-                <form action="/login/register" method="POST">
+                <form class="form-cadastro" action="/login/register" method="POST">
                   <input type="hidden" name="_csrf" value=<%=csrfToken %>>
                   <div class="mb-3">
                     <label>Email</label>
@@ -29,7 +29,7 @@
               <div class="col-lg">
                 <h4 class="text-center">Fazer login</h4>
                 <p class="text-center my-3">Se você ja cadastro, faça o login abaixo</p>
-                <form action="/login/login" method="POST">
+                <form class="form-login" action="/login/login" method="POST">
                   <input type="hidden" name="_csrf" value=<%=csrfToken %>>
                   <div class="mb-3">
                     <label>Email</label>
