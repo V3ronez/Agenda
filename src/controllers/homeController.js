@@ -8,9 +8,9 @@ exports.index = async (req, res,) => {
 /*
 5 METODOS DE UM CONTROLLER
 
-index -> lista todos os users
-store/create -> cria um novo user
-delete -> deleta um user
-show -> mostra um user
-update -> atualiza um user
+index -> lista todos os users -> GET
+store/create -> cria um novo user -> POST
+delete -> deleta um user -> DELETE
+show -> mostra um user -> GET
+update -> atualiza um user -> PATCH or PUT
 */
